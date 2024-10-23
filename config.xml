@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>Fisier de configurare</comment>
+<entry key="timeout">5000</entry>
+<entry key="helloMsg">Hello!</entry>
+</properties>
