@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns="urn:infoiasi.ro:xsdOptionale"
+            targetNameSpace="urn:infoiasi.ro:xsdOptionale"
+            xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            elementFormDefault="qualified"
+            attributeFormDefault="unqualified">
+
+    <!-- definim tagul 'optionale' -->
+    <xsd:element name="optionale" type="optionaleType" />
+
+    <!-- definim tipul (continutul) tagului 'optionale' -->
+    <xsd:complexType name="optionaleType">
+        <xsd:sequence>
+            <xsd:element name="optional" type="optionalType"
+                         minOccurs="1" maxOccurs="unbounded"/>
+
+        </xsd:sequence>
+    </xsd:complexType>
+
+
+</xsd:schema>

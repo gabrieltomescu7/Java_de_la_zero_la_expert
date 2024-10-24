@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+<!DOCTYPE optionale SYSTEM "cursuri.dtd">
+
+<optionale xmlns="urn:infoiasi.ro:Cursuri">
+    <optional id="C003">
+        <nume>Interactiunea om-calculator</nume>
+        <profesor>Sabin Corneliu Buraga</profesor>
+        <an>3</an>
+        <url>http://wwww.infoiasi.ro/~busaco/teach/interfaces</url>
+        <studenti min="15" max="60" />
+        <recomandari>
+            <curs>Comunicarea in medii electronice</curs>
+            <curs>Grafica</curs>
+        </recomandari>
+    </optional>
+
+    <optional id="C014" xmlns:Prof="urn:infoiasi.ro:Profesori">
+        <nume>Compilare paralela</nume>
+        <profesor>Stefan Andrei</profesor>
+        <an>4</an>
+        <url>http://www.infoiasi.ro/~stefan/compil/</url>
+        <recomandari>
+            <curs>Tehnici de compilare</curs>
+            <curs>Programare Java</curs>
+        </recomandari>
+    </optional>
+
+    <optional id="C009">
+        <nume>Medii virtuale</nume>
+        <profesor>Stefan Ciprian Tanasa</profesor>
+        <an>4</an>
+        <url>http://www.infoiasi.ro/~stanasa/vr/</url>
+        <studenti min="10" max="100" />
+        <recomandari>
+            <curs>Geometrie computationala</curs>
+            <curs>Programare Java</curs>
+        </recomandari>
+    </optional>
+
+    <optional id="C123"/>
+</optionale>
