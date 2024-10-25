@@ -1,7 +1,9 @@
 <?xml version="1.0" ?>
-<!DOCTYPE optionale SYSTEM "cursuri.dtd">
+<!-- <!DOCTYPE optionale SYSTEM "cursuri.dtd"> -->
 
-<optionale xmlns="urn:infoiasi.ro:Cursuri">
+<optionale xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns="urn:infoiasi.ro:xsdOptionale"
+           xsi:schemaLocation="urn:infoiasi.ro:xsdOptionale optionale.xsd">
     <optional id="C003">
         <nume>Interactiunea om-calculator</nume>
         <profesor>Sabin Corneliu Buraga</profesor>

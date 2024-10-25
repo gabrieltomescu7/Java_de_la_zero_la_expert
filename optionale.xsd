@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <xsd:schema xmlns="urn:infoiasi.ro:xsdOptionale"
-            targetNameSpace="urn:infoiasi.ro:xsdOptionale"
+            targetNamespace="urn:infoiasi.ro:xsdOptionale"
             xmlns:xsd="http://www.w3.org/2001/XMLSchema"
             elementFormDefault="qualified"
             attributeFormDefault="unqualified">
@@ -13,9 +13,40 @@
         <xsd:sequence>
             <xsd:element name="optional" type="optionalType"
                          minOccurs="1" maxOccurs="unbounded"/>
-
         </xsd:sequence>
     </xsd:complexType>
 
+    <!-- Definim tipul (continutul) tagului 'optional' -->
+    <xsd:complexType name="optionalType">
+        <xsd:sequence>
+            <xsd:element name="nume" type="xsd:string" />
+            <xsd:element name="profesor" type="xsd:string" />
+            <xsd:element name="an" type="anType" />
+            <xsd:element name="url" type="xsd:anyURI" />
+            <xsd:element name="studenti" type="studType" />
+            <xsd:element name="recomandari" type="recomandType" />
+        </xsd:sequence>
+        <xsd:attribute name="id" type="xsd:ID" use="required" />
+    </xsd:complexType>
 
+    <xsd:complexType name="recomandType">
+        <xsd:sequence>
+            <xsd:element name="curs" type="xsd:string"
+                                  minOccurs="1" maxOccurs="unbounded" />
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <!-- Definim valorile care pot sa contina tagul 'an' -->
+    <xsd:simpleType name="anType">
+        <xsd:restriction base="xsd:unsignedInt" >
+            <xsd:minInclusive value="1" />
+            <xsd:maxInclusive value="4" />
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <!-- Definim atributele tagului 'studenti' -->
+    <xsd:complexType name="studType">
+        <xsd:attribute name="min" type="xsd:unsignedInt" />
+        <xsd:attribute name="max" type="xsd:unsignedInt" />
+    </xsd:complexType>
 </xsd:schema>
