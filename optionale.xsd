@@ -29,6 +29,7 @@
         <xsd:attribute name="id" type="xsd:ID" use="required" />
     </xsd:complexType>
 
+   <!--INCERCARE REZOLVARE EROARE-->
     <xsd:complexType name="recomandType">
         <xsd:sequence>
             <xsd:element name="curs" type="xsd:string"

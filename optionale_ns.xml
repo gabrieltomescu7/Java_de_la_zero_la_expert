@@ -21,6 +21,7 @@
         <profesor>Stefan Andrei</profesor>
         <an>4</an>
         <url>http://www.infoiasi.ro/~stefan/compil/</url>
+        <studenti min="1" max="20"/>
         <recomandari>
             <curs>Tehnici de compilare</curs>
             <curs>Programare Java</curs>
@@ -39,5 +40,5 @@
         </recomandari>
     </optional>
 
-    <optional id="C123"/>
+    <!--<optional id="C123"/>-->
 </optionale>
