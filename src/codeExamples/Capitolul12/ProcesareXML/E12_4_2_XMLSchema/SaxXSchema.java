@@ -1,4 +1,4 @@
-package codeExamples.ProcesareXML.E12_4_2_XMLSchema;
+package codeExamples.Capitolul12.ProcesareXML.E12_4_2_XMLSchema;
 
 import org.xml.sax.*;
 import org.xml.sax.helpers.DefaultHandler;

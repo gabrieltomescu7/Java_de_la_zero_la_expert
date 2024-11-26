@@ -1,0 +1,4 @@
+# comentariu
+Ioana are 125.75 EURO.
+/* comentariu
+pe mai multe randuri */

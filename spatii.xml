@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<agenti>
+    <agent xmlns="urn:infoiasi.ro:Agent" id="dil">
+        <nume nr="9">Agent Web</nume>
+        <proprietate>mobil</proprietate>
+    </agent>
+    <a:agent xmlns:a="urn:polirom.ro:Marketing" id="PR">
+        <a:nume a:nr="1">Agent</a:nume>
+        <proprietate tip ="generic">dinamic</proprietate>
+    </a:agent>
+</agenti>
