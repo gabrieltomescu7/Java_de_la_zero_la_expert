@@ -1,4 +1,4 @@
-package codeExamples.ProcesareXML.E12_4_2;
+package codeExamples.Capitolul12.ProcesareXML.E12_4_2;
 
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;

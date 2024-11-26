@@ -1,4 +1,7 @@
 package codeExamples.CapitolulPatru.StringBuffer.Exemple.E4_2_24;
+
+import static java.io.StreamTokenizer.*;
+
 //Aflarea lungimii unui sir si a capacitatii StringBuffer-ului
 public class AflareLungimeCapacitateSir {
     public static void main(String[] args) {
@@ -13,5 +16,12 @@ public class AflareLungimeCapacitateSir {
         System.out.println("Capacitate1 = " + capacitate1);
         System.out.println("Lungime2 = " + b.length());
         System.out.println("Capacitate1 = " + capacitate2);
+
+
+        System.out.println("=========Constante Clasa StreamTokenizer=========");
+        System.out.println(TT_EOF);
+        System.out.println(TT_EOL);
+        System.out.println(TT_WORD);
+        System.out.println(TT_NUMBER);
     }
 }

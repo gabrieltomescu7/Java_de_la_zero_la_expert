@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE agenti [
+        <!ELEMENT agenti (agent|a:agent)+>
+        <!ELEMENT agent (nume,proprietate)>
+        <!ATTLIST agent
+                id    CDATA   #IMPLIED
+                xmlns CDATA   #IMPLIED
+                >
+        <!ELEMENT a:agent (a:nume,proprietate)>
+        <!ATTLIST a:agent
+                id  CDATA   #IMPLIED
+                xmlns:a   CDATA   #IMPLIED
+                >
+        <!ELEMENT nume (#PCDATA)>
+        <!ATTLIST nume
+                nr  CDATA   #REQUIRED
+                >
+        <!ELEMENT a:nume (#PCDATA)>
+        <!ATTLIST a:nume
+                a:nr  CDATA   #REQUIRED
+                >
+        <!ELEMENT proprietate (#PCDATA)>
+        <!ATTLIST proprietate
+                tip     CDATA   #IMPLIED
+                >
+        ]>
+<agenti>
+    <agent xmlns="urn:infoiasi.ro:Agent" id="dil">
+        <nume nr="9">Agent Web</nume>
+        <proprietate>mobil</proprietate>
+    </agent>
+    <a:agent xmlns:a="urn:polirom.ro:Marketing" id="PR">
+        <a:nume a:nr="1">Agent</a:nume>
+        <proprietate tip ="generic">dinamic</proprietate>
+    </a:agent>
+    <!--pentru verificarea erorii
+    <agent>
+    </agent>-->
+</agenti>

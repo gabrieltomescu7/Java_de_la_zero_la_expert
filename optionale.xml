@@ -1,10 +1,13 @@
 <?xml version="1.0" ?>
-<optionale>
+
+<optionale xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns="urn:infoiasi.ro:xsdOptionale"
+           xsi:schemaLocation="urn:infoiasi.ro:xsdOptionale optionale.xsd">
     <optional id="C003">
         <nume>Interactiunea om-calculator</nume>
         <profesor>Sabin Corneliu Buraga</profesor>
         <an>3</an>
-        <url>http://wwww.infoiasi.ro/~busaco/teach/interfaces</url>
+        <url>http://www.infoiasi.ro/~busaco/teach/interfaces</url>
         <studenti min="15" max="60" />
         <recomandari>
             <curs>Comunicarea in medii electronice</curs>
@@ -15,8 +18,10 @@
     <optional id="C014">
         <nume>Compilare paralela</nume>
         <profesor>Stefan Andrei</profesor>
+        <!-- se va folosi an 5 pentru generarea erorii -->
         <an>4</an>
         <url>http://www.infoiasi.ro/~stefan/compil/</url>
+        <studenti min="10" max="60"/>
         <recomandari>
             <curs>Tehnici de compilare</curs>
             <curs>Programare Java</curs>
