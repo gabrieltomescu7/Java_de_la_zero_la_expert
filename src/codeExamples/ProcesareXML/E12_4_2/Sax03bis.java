@@ -78,7 +78,6 @@ public class Sax03bis {
         XMLReader xmlReader;
 
 
-
         factory.setValidating(true);
         try {
             parser = factory.newSAXParser();
